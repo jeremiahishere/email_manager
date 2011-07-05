@@ -1,7 +1,7 @@
 module EmailManager
   module Generators
     class InstallGenerator < Rails::Generators::Base
-      include Rails::Generator::Migration
+      include Rails::Generators::Migration
 
       source_root File.expand_path("../templates/migrations", __FILE__)
       # Implement the required interface for Rails::Generators::Migration.
