@@ -1,8 +1,3 @@
-require 'rails/generators'
-require 'rails/generators/migration'
-require 'active_record'
-require 'rails/generators/active_record'
-
 module EmailManager
   module Generators
     class InstallGenerator < Rails::Generators::Base
