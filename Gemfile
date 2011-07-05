@@ -10,5 +10,8 @@ group :development do
   gem "yard", "~> 0.6.0"
   gem "bundler", "~> 1.0.0"
   gem "jeweler", "~> 1.6.3"
+  # not sure if rcov works for ruby 1.9
   gem "rcov", ">= 0"
+  # trying cover me instead
+  gem "cover_me", ">= 1.0.0.rc6"
 end
