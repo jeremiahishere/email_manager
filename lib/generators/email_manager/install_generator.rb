@@ -5,7 +5,7 @@ require 'rails/generators/active_record'
 
 module EmailManager
   module Generators
-    class InstallGenerator < Rails::Generator::Base
+    class InstallGenerator < Rails::Generators::Base
       include Rails::Generator::Migration
 
       source_root File.expand_path("../templates/migrations", __FILE__)
