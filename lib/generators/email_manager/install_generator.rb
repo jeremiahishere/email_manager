@@ -1,3 +1,5 @@
+# Generates the Managed Email migration and the initializer with the observer
+# @author Jeremiah Hemphill
 module EmailManager
   module Generators
     class InstallGenerator < Rails::Generators::Base
@@ -9,7 +11,6 @@ Description:
   Copies the Email Manager configuration file to the user's initializer directory.  Adds a migration for the Managed Email model.
 DESC
 
-      #source_root File.expand_path("../templates/migrations", __FILE__)
       # Implement the required interface for Rails::Generators::Migration.
       def self.next_migration_number(dirname) #:nodoc:
         next_migration_number = current_migration_number(dirname) + 1 
