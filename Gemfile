@@ -17,4 +17,6 @@ group :development, :test do
   gem "rcov", ">= 0"
   # trying cover me instead
   gem "cover_me", ">= 1.0.0.rc6"
+  # hudson ci
+  gem "ci_reporter"
 end
