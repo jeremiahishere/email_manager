@@ -12,13 +12,10 @@ Description:
   Copies the controller and views into the rails project so they can be overriden.
 DESC
 
+      # Stolen from Kaminari gem
       # @returns [String] either 'haml' or 'erb' based on the user input (which is set to template_engine)
-      def get_template_engine
-        if template_engine == "haml"
-          return "haml"
-        else
-          return "erb"
-        end
+      def template_engine
+        options[:template_engine].try(:to_s).try(:downcase) || 'erb'
       end
 
       # Adds the views to the parent project
