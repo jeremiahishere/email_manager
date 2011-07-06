@@ -31,8 +31,6 @@ DESC
         file_names.each do |file_name|
           source = "views/email_manager/managed_emails/" + file_name + ".html" + extension
           destination = "app/views/email_manager/managed_emails/" + file_name + ".html" + extension
-          puts source
-          puts destination
           copy_file source, destination
         end
       end
