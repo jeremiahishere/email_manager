@@ -14,6 +14,10 @@ Install the gem
   
 This will add a migration and an initializer.  Run the migration and everything will be ready to go.  All mailers inheriting from ActionMailer::Base will have their deliveries recorded.  
 
+To override the views and controller, run the views generator.  The -e argument can be used to create haml or erb based views.  Erb is the default.
+
+  rails generate email_manager:views -e haml
+
 == Todos
 
 * Improve test coverage
