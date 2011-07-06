@@ -12,3 +12,10 @@ group :development do
   # trying cover me instead
   gem "cover_me", ">= 1.0.0.rc6"
 end
+
+group :test do
+  gem "rails", ">= 3.0.0"
+  gem "sqlite3"
+  gem "capybara", ">= 0.4.0"
+  gem "ruby-debug19"
+end
