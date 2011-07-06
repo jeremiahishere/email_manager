@@ -40,6 +40,8 @@ GEM
       xpath (~> 0.1.4)
     childprocess (0.1.9)
       ffi (~> 1.0.6)
+    ci_reporter (1.6.5)
+      builder (>= 2.1.2)
     columnize (0.3.4)
     configatron (2.8.2)
       yamler (>= 0.1.0)
@@ -135,6 +137,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.0.0)
   capybara (>= 0.4.0)
+  ci_reporter
   cover_me (>= 1.0.0.rc6)
   jeweler (~> 1.6.3)
   rails (>= 3.0.0)

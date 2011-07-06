@@ -3,19 +3,24 @@ require 'spec_helper'
 describe EmailManager::ManagedEmailsController do
   describe "index" do
     before(:each) do
+      @managed_email = mock_model(EmailManager::ManagedEmail)
+      EmailManager::ManagedEmail.stub!(:search).and_return([@managed_email])
 
     end
 
     it "should be successful" do
-      pending
+      get :index
+      response.should be_success
     end
 
     it "should render the index template" do
-      pending
+      get :index
+      response.should render_template('index')
     end
 
     it "should assign the managed emails to the view" do
-      pending
+      get :index
+      assigns[:managed_emails].should == [@managed_email]
     end
 
     it "should attempt to use meta_search" do

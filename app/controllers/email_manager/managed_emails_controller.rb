@@ -16,13 +16,20 @@ module EmailManager
         @search = EmailManaged::ManagedEmail.all
       end 
 
-      # pagination with kaminari
+      # check if kaminari exists
       begin
-        @managed_emails = Kaminari.paginate_array(@search.all).page(params[:page])
+        require "kaminari"
         @pagination_enabled = true
       rescue LoadError => e
+        @pagination_enabled = false
+      end
+
+      # Paginate with kaminari
+      if @pagination_enabled
+        @managed_emails = Kaminari.paginate_array(@search.all).page(params[:page])
+      else
         @managed_emails = @search
-      end 
+      end
 
       respond_to do |format|
         format.html
