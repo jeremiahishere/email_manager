@@ -13,7 +13,7 @@ Description:
 DESC
 
       # @returns [String] either 'haml' or 'erb' based on the user input (which is set to template_engine)
-      def self.get_template_engine
+      def get_template_engine
         if template_engine == "haml"
           return "haml"
         else
