@@ -42,9 +42,11 @@ describe EmailManager::ManagedEmailsController do
     it "should attempt to use kaminari" do
       # fun hack to allow us to stub the Kaminari.paginate_array method
       class Kaminari
+        def page(args)
+          [@managed_email]
+        end
       end
-      Kaminari.should_receive(:paginate_array).and_return([@managed_email])
-
+      Kaminari.should_receive(:paginate_array).and_return(Kaminari.new)
       get :index
       assigns[:pagination_enabled].should be_true
     end
