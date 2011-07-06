@@ -74,19 +74,24 @@ describe EmailManager::ManagedEmailsController do
 
   describe "body" do
     before(:each) do
-
+      @managed_email = mock_model(EmailManager::ManagedEmail)
+      @managed_email_body = "The body of the mocked email"
+      @managed_email.stub!(:body).and_return(@managed_email_body)
+      EmailManager::ManagedEmail.stub!(:find_by_id).with(1).and_return(@managed_email)
+    end
+    
+    def do_body
+      get :body, :method => :get, :id => 1
     end
 
     it "should be successful" do
-      pending
-    end
-
-    it "should render as text" do
-      pending
+      do_body
+      response.should be_success
     end
 
     it "should render the body of the managed email" do
-      pending
+      do_body
+      response.body.should == @managed_email_body
     end
   end
 end

@@ -884,3 +884,74 @@ Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
   Processing by EmailManager::ManagedEmailsController#show as HTML
   Parameters: {"method"=>:get, "id"=>1}
 Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (1.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to InstallEmailManager (20110706133041)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 8ms (Views: 4.5ms | ActiveRecord: 1.7ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 5ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 86ms (Views: 85.2ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (1.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to InstallEmailManager (20110706133041)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 1.7ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 1ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
