@@ -36,13 +36,22 @@ describe EmailManager::ManagedEmailsController do
       assigns[:search_enabled].should_not be_true
     end
 
-
+    # this test has issues
+    # there is no Array.all method, had to change the code to use Array.each
+    # changing it back will mess with this test
     it "should attempt to use kaminari" do
-      pending
+      # fun hack to allow us to stub the Kaminari.paginate_array method
+      class Kaminari
+      end
+      Kaminari.should_receive(:paginate_array).and_return([@managed_email])
+
+      get :index
+      assigns[:pagination_enabled].should be_true
     end
    
     it "should not paginate if kaminari is not installed" do
-      pending
+      get :index
+      assigns[:pagination_enabled].should be_false
     end
   end
 

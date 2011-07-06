@@ -1,11 +1,11 @@
-module EmailManager
 # Observer on ActionMailer deliver_email to save the emails as ManagedEmail objects
 # @author Jeremiah Hemphill
+module EmailManager
   class ManagedEmailObserver
     # stores the mail as a ManagedEmail object
     # @param [Mail] mail The mail object that was just delivered
     def self.delivered_email(mail)
-    # assume the caller is in the app folder somewhere
+      # assume the caller is in the app folder somewhere
       calling_files = caller(0).select{ |val| val.match(Rails.root.join('app').to_s) }
       calling_file_list = calling_files.join("\n")
 
