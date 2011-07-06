@@ -27,13 +27,13 @@ DESC
       def copy_views
         #theoretical support in the future for haml
         extension = "." + template_engine
-        file_names = %w{_pagination _search_form index show}
+        file_names = %w{index show _pagination _search_form }
         file_names.each do |file_name|
           source = "views/email_manager/managed_emails/" + file_name + ".html" + extension
           destination = "app/views/email_manager/managed_emails/" + file_name + ".html" + extension
           puts source
           puts destination
-          template source, destination
+          copy_file source, destination
         end
       end
 

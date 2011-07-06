@@ -1,4 +1,4 @@
-<% if !locals.nil? && locals[:search_enabled]%>
+<% if locals[:search_enabled]%>
   <%= form_for [:email_manager, locals[:search]], :url => email_manager_managed_emails_path  do |form| %>
     <h3>
       Search Managed Emails
