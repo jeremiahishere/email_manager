@@ -15,17 +15,24 @@ DESC
       # Stolen from Kaminari gem
       # @returns [String] either 'haml' or 'erb' based on the user input (which is set to template_engine)
       def template_engine
-        options[:template_engine].try(:to_s).try(:downcase) || 'erb'
+        te = options[:template_engine].try(:to_s).try(:downcase) || 'erb'
+        if te == "haml"
+          return "haml"
+        else
+          return "erb"
+        end
       end
 
       # Adds the views to the parent project
       def copy_views
         #theoretical support in the future for haml
         extension = "." + template_engine
-        files = %w{_pagination _search_form index show}
-        files.each do |file|
-          source = "views/email_manager/managed_emails/" + file + ".html" + extension
-          destination = "app/views/email_manager/managed_emails/" + file + ".html" + extension
+        file_names = %w{_pagination _search_form index show}
+        file_names.each do |file_name|
+          source = "views/email_manager/managed_emails/" + file_name + ".html" + extension
+          destination = "app/views/email_manager/managed_emails/" + file_name + ".html" + extension
+          puts source
+          puts destination
           template source, destination
         end
       end
