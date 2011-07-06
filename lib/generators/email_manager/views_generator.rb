@@ -2,7 +2,7 @@
 # @author Jeremiah Hemphill
 module EmailManager
   module Generators
-    class InstallGenerator < Rails::Generators::Base
+    class ViewGenerator < Rails::Generators::Base
       source_root File.expand_path("../../../app", __FILE__)
 
       class_option :template_engine, :type => :string, :aliases => '-e', :desc => 'Template engine for the views. Available options are "erb" and "haml" with a default value of "erb".'
