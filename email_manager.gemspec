@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{email_manager}
-  s.version = "0.0.2"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Jeremiah Hemphill}]
@@ -29,9 +29,13 @@ Gem::Specification.new do |s|
     "app/controllers/email_manager/managed_emails_controller.rb",
     "app/models/email_manager/managed_email.rb",
     "app/views/email_manager/managed_emails/_pagination.html.erb",
+    "app/views/email_manager/managed_emails/_pagination.html.haml",
     "app/views/email_manager/managed_emails/_search_form.html.erb",
+    "app/views/email_manager/managed_emails/_search_form.html.haml",
     "app/views/email_manager/managed_emails/index.html.erb",
+    "app/views/email_manager/managed_emails/index.html.haml",
     "app/views/email_manager/managed_emails/show.html.erb",
+    "app/views/email_manager/managed_emails/show.html.haml",
     "config/routes.rb",
     "email_manager.gemspec",
     "lib/email_manager.rb",
