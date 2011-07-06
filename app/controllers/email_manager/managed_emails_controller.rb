@@ -20,9 +20,10 @@ module EmailManager
 
       # Paginate with kaminari
       begin
-        @managed_emails = Kaminari.paginate_array(@search.each)#.page(params[:page])
+        @managed_emails = Kaminari.paginate_array(@search.each).page(params[:page])
         @pagination_enabled = true
-      rescue NameError
+      rescue NameError => e
+        puts e
         @managed_emails = @search
         @pagination_enabled = false
       end
@@ -35,7 +36,7 @@ module EmailManager
     # shows a single managed email's body text
     # @param [String] id The id of the selected managed email
     def show
-      @managed_email = ManagedEmail.find_by_id(params[:id])
+      @managed_email = EmailManager::ManagedEmail.find_by_id(params[:id])
 
       respond_to do |format|
         format.html
@@ -43,7 +44,7 @@ module EmailManager
     end 
 
     def body
-      @managed_email = ManagedEmail.find_by_id(params[:id])
+      @managed_email = EmailManager::ManagedEmail.find_by_id(params[:id])
 
       respond_to do |format|
         format.html { render :text => @managed_email.body }
