@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{email_manager}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Jeremiah Hemphill}]
@@ -88,6 +88,7 @@ Gem::Specification.new do |s|
     "spec/routing/managed_emails_spec.rb",
     "spec/spec_helper.rb"
   ]
+  s.homepage = %q{https://github.com/jeremiahishere/email_manager}
   s.licenses = [%q{MIT}]
   s.require_paths = [%q{lib}]
   s.rubygems_version = %q{1.8.5}
