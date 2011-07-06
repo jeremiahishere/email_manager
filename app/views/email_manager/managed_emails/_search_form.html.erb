@@ -1,0 +1,21 @@
+<% if locals[:search_enabled]%>
+  <%= form_for [:email_manager, locals[:search]], :url => email_manager_managed_emails_path  do |form| %>
+    <h3>
+      Search Managed Emails
+    </h3>
+    <p>
+      <%= form.label "Subject Search" %>
+      <%= form.text_field :subject_contains %>
+    </p>
+    <p>
+      <%= form.label "Recipient Search" %>
+      <%= form.text_field :to_contains %>
+    </p>
+    <p>
+      <%= form.label "Message Search" %>
+      <%= form.text_field :body_contains %>
+    </p>
+    <%= form.submit "Search" %>
+    <%= button_to "Show All", email_manager_managed_emails_path %>
+  <% end %>
+<% end %>
