@@ -21,7 +21,7 @@ DESC
       # Adds the views to the parent project
       def copy_views
         #theoretical support in the future for haml
-        extension = "." + get_template_engine
+        extension = "." + template_engine
         files = %w{_pagination _search_form index show}
         files.each do |file|
           source = "views/email_manager/managed_emails/" + file + ".html" + extension
