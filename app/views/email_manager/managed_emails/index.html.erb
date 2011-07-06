@@ -1,0 +1,33 @@
+<div class='topnav'>
+  <h1 class='pagetitle'> Listing Managed Emails</h1>
+</div>
+
+<%= render "search_form", :locals => { :search => @search, :search_enabled => @search_enabled }%>
+<div class='content'>
+  <%= render "pagination", :locals => { :records => @records, :pagniation_enabled => @pagination_enabled }%>
+  <table class='tableview'>
+    <tr>
+      <th>To</th>
+      <th>Subject</th>
+      <th>Date Sent</th>
+      <th>Sent From</th>
+      <th>Show</th>
+    </tr>
+    <% if @managed_emails.length > 0%>
+      <% @managed_emails.each do |managed_email| %>
+        <tr>
+          <td><%= managed_email.to%></td>
+          <td><%= managed_email.subject%></td>
+          <td><%= managed_email.date_sent%></td>
+          <td><%= managed_email.caller%></td>
+          <td><%= link_to "Show", email_manager_managed_email_path(managed_email)%></td>
+      <% end %>
+    <% else %>
+      <tr>
+        <td colspan = '5'>
+          There are no Managed Emails that match your query
+        </td>
+      </tr>
+    <% end %>
+  </table>
+</div>

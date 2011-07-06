@@ -12,15 +12,18 @@ end
 require 'rake'
 
 require 'jeweler'
+
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "email_manager"
-  gem.homepage = "http://github.com/jeremiahishere/email_manager"
+  #gem.homepage = "http://github.com/jeremiahishere/email_manager"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{An email manager}
+  gem.description = %Q{System for storing and managing emails sent by ActionMailer}
   gem.email = "jeremiah@cloudspace.com"
   gem.authors = ["Jeremiah Hemphill"]
+  gem.homepage = 'https://github.com/jeremiahishere/email_manager'
+  gem.source = 'https://github.com/jeremiahishere/email_manager'
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
@@ -40,3 +43,17 @@ task :default => :spec
 
 require 'yard'
 YARD::Rake::YardocTask.new
+
+
+# hudson ci
+require 'ci/reporter/rake/rspec'
+namespace :hudson do
+  def report_path
+    "spec/reports/"
+  end 
+
+  task :report_setup do
+    rm_rf report_path
+    mkdir_p report_path
+  end 
+end

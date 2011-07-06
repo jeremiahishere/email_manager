@@ -1,0 +1,60 @@
+<h1 class='pagetitle'>
+  Viewing managed email
+</h1>
+
+<div class='content'>
+  <div id='managed_email'>
+    <p>
+      <b>Date Sent:</b>
+      <%= @managed_email.date_sent %>
+    </p>
+    <p>
+      <b>From:</b>
+      <%= @managed_email.from %>
+    </p>
+    <p>
+      <b>Reply To:</b>
+      <%= @managed_email.reply_to %>
+    </p>
+    <p>
+      <b>To:</b>
+      <%= @managed_email.to %>
+    </p>
+    <p>
+      <b>CC:</b>
+      <%= @managed_email.cc %>
+    </p>
+    <p>
+      <b>BCC:</b>
+      <%= @managed_email.bcc %>
+    </p>
+    <p>
+      <b>Headers:</b>
+      <%= @managed_email.headers %>
+    </p>
+    <p>
+      <b>Message ID:</b>
+      <%= @managed_email.message_id %>
+    </p>
+    <p>
+      <b>Subject:</b>
+      <%= @managed_email.subject %>
+    </p>
+    <p>
+      <b>Body:</b>
+      <br />
+      <iframe width = "600" height = "512" src = "<%= email_manager_managed_email_body_path(@managed_email) %>" >
+        <p>
+          Your browser does not support iframes.
+        </p>
+        <%= @managed_email.body %>
+      </iframe>
+    </p>
+    <p>
+      <b> Caller:</b>
+      <%= @managed_email.caller %>
+    </p>
+  </div>
+</div>
+
+<%= link_to "Back", email_manager_managed_emails_path %>
