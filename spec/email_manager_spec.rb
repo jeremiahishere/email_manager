@@ -5,3 +5,17 @@ describe EmailManager do
     EmailManager.should be_a(Module)
   end
 end
+
+# things we may want to add
+# database cleaner
+# cucumber support
+#
+#
+# things to test
+# front end
+# controller
+# views
+# routes
+# back end
+# the observer
+# the managed email model (not much to test)
