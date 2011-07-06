@@ -2130,3 +2130,762 @@ Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
   Parameters: {"method"=>:get, "id"=>1}
 Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
   [1m[35mEmailManager::ManagedEmail Load (0.3ms)[0m  SELECT "managed_emails".* FROM "managed_emails" ORDER BY managed_emails.id DESC LIMIT 1
+  [1m[36mSQL (1.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to InstallEmailManager (20110706133041)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 19ms (Views: 4.2ms | ActiveRecord: 1.6ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 19ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 20ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 20ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 20ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35mEmailManager::ManagedEmail Load (0.0ms)[0m  SELECT "managed_emails".* FROM "managed_emails" ORDER BY managed_emails.id DESC LIMIT 1
+  [1m[36mSQL (1.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to InstallEmailManager (20110706133041)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 23ms (Views: 5.2ms | ActiveRecord: 1.9ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 22ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 25ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 22ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 18ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35mEmailManager::ManagedEmail Load (0.5ms)[0m  SELECT "managed_emails".* FROM "managed_emails" ORDER BY managed_emails.id DESC LIMIT 1
+  [1m[36mSQL (1.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to InstallEmailManager (20110706133041)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 25ms (Views: 5.5ms | ActiveRecord: 1.9ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 27ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 25ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 24ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 19ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+Sent mail to test@email_manager.gem (128ms)
+Date: Wed, 06 Jul 2011 11:53:15 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e1484eaf0fa7_92d1370c20505ca@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+
+Sent mail to test@email_manager.gem (10ms)
+Date: Wed, 06 Jul 2011 11:53:15 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e1484eb1cbdb_92d1370c205066e@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+
+Sent mail to test@email_manager.gem (13ms)
+Date: Wed, 06 Jul 2011 11:53:15 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e1484eb24196_92d1370c20507ea@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+  [1m[36mSQL (1.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to InstallEmailManager (20110706133041)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 23ms (Views: 7.1ms | ActiveRecord: 2.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 24ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 26ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 25ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 19ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+Sent mail to test@email_manager.gem (135ms)
+Date: Wed, 06 Jul 2011 12:01:31 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e1486db6eed7_92f9dd42444619@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+
+Sent mail to test@email_manager.gem (12ms)
+Date: Wed, 06 Jul 2011 12:01:31 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e1486db8aeb9_92f9dd42444759@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+
+Sent mail to test@email_manager.gem (14ms)
+Date: Wed, 06 Jul 2011 12:01:31 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e1486db90ebe_92f9dd424448dc@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+  [1m[36mSQL (1.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to InstallEmailManager (20110706133041)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 21ms (Views: 4.6ms | ActiveRecord: 1.6ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 24ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 24ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 22ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 18ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+Sent mail to test@email_manager.gem (125ms)
+Date: Wed, 06 Jul 2011 12:03:22 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e14874a970f1_931d24420739c2@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+
+Sent mail to test@email_manager.gem (9ms)
+Date: Wed, 06 Jul 2011 12:03:22 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e14874ab2c72_931d24420740fb@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+
+Sent mail to test@email_manager.gem (14ms)
+Date: Wed, 06 Jul 2011 12:03:22 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e14874ab903e_931d24420741ad@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+  [1m[36mSQL (1.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to InstallEmailManager (20110706133041)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 19ms (Views: 4.3ms | ActiveRecord: 1.9ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 21ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 22ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 20ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 66ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+Sent mail to test@email_manager.gem (51ms)
+Date: Wed, 06 Jul 2011 12:05:06 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e1487b2c4ec_935a0ec9042074@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "managed_emails" ("date_sent", "from", "reply_to", "to", "cc", "bcc", "headers", "message_id", "subject", "body", "caller", "created_at", "updated_at") VALUES ('2011-07-06 16:05:06.000000', 'from@example.com', '', 'test@email_manager.gem', '', '', '{}', '4e1487b2c4ec_935a0ec9042074@ubuntu.mail', 'Dummy email notification', 'This is a dummy email notification. It should never be sent.
+', '', '2011-07-06 16:05:06.094357', '2011-07-06 16:05:06.094357')
+
+Sent mail to test@email_manager.gem (4ms)
+Date: Wed, 06 Jul 2011 12:05:06 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e1487b246c2e_935a0ec904218f@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "managed_emails" ("date_sent", "from", "reply_to", "to", "cc", "bcc", "headers", "message_id", "subject", "body", "caller", "created_at", "updated_at") VALUES ('2011-07-06 16:05:06.000000', 'from@example.com', '', 'test@email_manager.gem', '', '', '{}', '4e1487b246c2e_935a0ec904218f@ubuntu.mail', 'Dummy email notification', 'This is a dummy email notification. It should never be sent.
+', '', '2011-07-06 16:05:06.297488', '2011-07-06 16:05:06.297488')[0m
+
+Sent mail to test@email_manager.gem (6ms)
+Date: Wed, 06 Jul 2011 12:05:06 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e1487b2518f2_935a0ec90422ce@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "managed_emails" ("date_sent", "from", "reply_to", "to", "cc", "bcc", "headers", "message_id", "subject", "body", "caller", "created_at", "updated_at") VALUES ('2011-07-06 16:05:06.000000', 'from@example.com', '', 'test@email_manager.gem', '', '', '{}', '4e1487b2518f2_935a0ec90422ce@ubuntu.mail', 'Dummy email notification', 'This is a dummy email notification. It should never be sent.
+', '', '2011-07-06 16:05:06.343753', '2011-07-06 16:05:06.343753')
+  [1m[36mEmailManager::ManagedEmail Load (0.3ms)[0m  [1mSELECT "managed_emails".* FROM "managed_emails" ORDER BY managed_emails.id DESC LIMIT 1[0m
+  [1m[36mSQL (1.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to InstallEmailManager (20110706133041)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 19ms (Views: 3.8ms | ActiveRecord: 2.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 19ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 21ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 20ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 65ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+Sent mail to test@email_manager.gem (51ms)
+Date: Wed, 06 Jul 2011 12:05:31 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e1487cb7b578_93b4f8490589ef@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+  [1m[35mAREL (0.8ms)[0m  INSERT INTO "managed_emails" ("date_sent", "from", "reply_to", "to", "cc", "bcc", "headers", "message_id", "subject", "body", "caller", "created_at", "updated_at") VALUES ('2011-07-06 16:05:31.000000', 'from@example.com', '', 'test@email_manager.gem', '', '', '{}', '4e1487cb7b578_93b4f8490589ef@ubuntu.mail', 'Dummy email notification', 'This is a dummy email notification. It should never be sent.
+', '', '2011-07-06 16:05:31.551071', '2011-07-06 16:05:31.551071')
+
+Sent mail to test@email_manager.gem (5ms)
+Date: Wed, 06 Jul 2011 12:05:31 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e1487cba9a87_93b4f84905909d@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "managed_emails" ("date_sent", "from", "reply_to", "to", "cc", "bcc", "headers", "message_id", "subject", "body", "caller", "created_at", "updated_at") VALUES ('2011-07-06 16:05:31.000000', 'from@example.com', '', 'test@email_manager.gem', '', '', '{}', '4e1487cba9a87_93b4f84905909d@ubuntu.mail', 'Dummy email notification', 'This is a dummy email notification. It should never be sent.
+', '', '2011-07-06 16:05:31.704781', '2011-07-06 16:05:31.704781')[0m
+
+Sent mail to test@email_manager.gem (5ms)
+Date: Wed, 06 Jul 2011 12:05:31 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e1487cbb203a_93b4f8490591c9@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "managed_emails" ("date_sent", "from", "reply_to", "to", "cc", "bcc", "headers", "message_id", "subject", "body", "caller", "created_at", "updated_at") VALUES ('2011-07-06 16:05:31.000000', 'from@example.com', '', 'test@email_manager.gem', '', '', '{}', '4e1487cbb203a_93b4f8490591c9@ubuntu.mail', 'Dummy email notification', 'This is a dummy email notification. It should never be sent.
+', '', '2011-07-06 16:05:31.738884', '2011-07-06 16:05:31.738884')
+  [1m[36mEmailManager::ManagedEmail Load (0.2ms)[0m  [1mSELECT "managed_emails".* FROM "managed_emails" ORDER BY managed_emails.id DESC LIMIT 1[0m
+  [1m[36mSQL (2.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to InstallEmailManager (20110706133041)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 33ms (Views: 9.1ms | ActiveRecord: 2.3ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 31ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 26ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 34ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 51ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 13ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 39ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+Sent mail to test@email_manager.gem (218ms)
+Date: Wed, 06 Jul 2011 12:25:23 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e148c739f899_94ef44bc445962@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+  [1m[35mAREL (0.8ms)[0m  INSERT INTO "managed_emails" ("date_sent", "from", "reply_to", "to", "cc", "bcc", "headers", "message_id", "subject", "body", "caller", "created_at", "updated_at") VALUES ('2011-07-06 16:25:23.000000', 'from@example.com', '', 'test@email_manager.gem', '', '', '{}', '4e148c739f899_94ef44bc445962@ubuntu.mail', 'Dummy email notification', 'This is a dummy email notification. It should never be sent.
+', '', '2011-07-06 16:25:23.852978', '2011-07-06 16:25:23.852978')
+  [1m[36mEmailManager::ManagedEmail Load (0.6ms)[0m  [1mSELECT "managed_emails".* FROM "managed_emails" ORDER BY managed_emails.id DESC LIMIT 1[0m
+
+Sent mail to test@email_manager.gem (26ms)
+Date: Wed, 06 Jul 2011 12:26:08 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e148ca04f330_94ef44bc44601a@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+  [1m[35mAREL (2.3ms)[0m  INSERT INTO "managed_emails" ("date_sent", "from", "reply_to", "to", "cc", "bcc", "headers", "message_id", "subject", "body", "caller", "created_at", "updated_at") VALUES ('2011-07-06 16:26:08.000000', 'from@example.com', '', 'test@email_manager.gem', '', '', '{}', '4e148ca04f330_94ef44bc44601a@ubuntu.mail', 'Dummy email notification', 'This is a dummy email notification. It should never be sent.
+', '', '2011-07-06 16:26:08.470681', '2011-07-06 16:26:08.470681')
+  [1m[36mEmailManager::ManagedEmail Load (2.2ms)[0m  [1mSELECT "managed_emails".* FROM "managed_emails" ORDER BY managed_emails.id DESC LIMIT 1[0m
+  [1m[36mSQL (1.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to InstallEmailManager (20110706133041)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 35ms (Views: 6.7ms | ActiveRecord: 2.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 19ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 28ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 55ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 88ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+Sent mail to test@email_manager.gem (63ms)
+Date: Wed, 06 Jul 2011 12:26:46 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e148cc64b509_95277149c852a@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+  [1m[35mAREL (0.6ms)[0m  INSERT INTO "managed_emails" ("date_sent", "from", "reply_to", "to", "cc", "bcc", "headers", "message_id", "subject", "body", "caller", "created_at", "updated_at") VALUES ('2011-07-06 16:26:46.000000', 'from@example.com', '', 'test@email_manager.gem', '', '', '{}', '4e148cc64b509_95277149c852a@ubuntu.mail', 'Dummy email notification', 'This is a dummy email notification. It should never be sent.
+', '', '2011-07-06 16:26:46.380021', '2011-07-06 16:26:46.380021')
+  [1m[36mEmailManager::ManagedEmail Load (0.4ms)[0m  [1mSELECT "managed_emails".* FROM "managed_emails" ORDER BY managed_emails.id DESC LIMIT 1[0m
+
+Sent mail to test@email_manager.gem (5ms)
+Date: Wed, 06 Jul 2011 12:26:46 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e148cc6a8ea6_95277149c867e@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "managed_emails" ("date_sent", "from", "reply_to", "to", "cc", "bcc", "headers", "message_id", "subject", "body", "caller", "created_at", "updated_at") VALUES ('2011-07-06 16:26:46.000000', 'from@example.com', '', 'test@email_manager.gem', '', '', '{}', '4e148cc6a8ea6_95277149c867e@ubuntu.mail', 'Dummy email notification', 'This is a dummy email notification. It should never be sent.
+', '', '2011-07-06 16:26:46.701400', '2011-07-06 16:26:46.701400')
+  [1m[36mEmailManager::ManagedEmail Load (0.4ms)[0m  [1mSELECT "managed_emails".* FROM "managed_emails" ORDER BY managed_emails.id DESC LIMIT 1[0m
+  [1m[36mSQL (1.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to InstallEmailManager (20110706133041)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 37ms (Views: 10.3ms | ActiveRecord: 2.1ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 57ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 32ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 36ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 25ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+Sent mail to test@email_manager.gem (237ms)
+Date: Wed, 06 Jul 2011 12:27:06 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e148cdaa59d6_956c0ac24577cb@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+  [1m[35mAREL (2.5ms)[0m  INSERT INTO "managed_emails" ("date_sent", "from", "reply_to", "to", "cc", "bcc", "headers", "message_id", "subject", "body", "caller", "created_at", "updated_at") VALUES ('2011-07-06 16:27:06.000000', 'from@example.com', '', 'test@email_manager.gem', '', '', '{}', '4e148cdaa59d6_956c0ac24577cb@ubuntu.mail', 'Dummy email notification', 'This is a dummy email notification. It should never be sent.
+', '', '2011-07-06 16:27:06.926036', '2011-07-06 16:27:06.926036')
+  [1m[36mEmailManager::ManagedEmail Load (0.9ms)[0m  [1mSELECT "managed_emails".* FROM "managed_emails" ORDER BY managed_emails.id DESC LIMIT 1[0m
+  [1m[35mEmailManager::ManagedEmail Load (0.3ms)[0m  SELECT "managed_emails".* FROM "managed_emails" ORDER BY managed_emails.id DESC LIMIT 1
+  [1m[36mEmailManager::ManagedEmail Load (0.4ms)[0m  [1mSELECT "managed_emails".* FROM "managed_emails" ORDER BY managed_emails.id DESC LIMIT 1[0m
+
+Sent mail to test@email_manager.gem (21ms)
+Date: Wed, 06 Jul 2011 12:28:35 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e148d33847e1_956c0ac2457811@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "managed_emails" ("date_sent", "from", "reply_to", "to", "cc", "bcc", "headers", "message_id", "subject", "body", "caller", "created_at", "updated_at") VALUES ('2011-07-06 16:28:35.000000', 'from@example.com', '', 'test@email_manager.gem', '', '', '{}', '4e148d33847e1_956c0ac2457811@ubuntu.mail', 'Dummy email notification', 'This is a dummy email notification. It should never be sent.
+', '', '2011-07-06 16:28:35.676474', '2011-07-06 16:28:35.676474')
+  [1m[36mEmailManager::ManagedEmail Load (0.3ms)[0m  [1mSELECT "managed_emails".* FROM "managed_emails" ORDER BY managed_emails.id DESC LIMIT 1[0m
+  [1m[36mSQL (1.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to InstallEmailManager (20110706133041)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 35ms (Views: 5.0ms | ActiveRecord: 2.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 20ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 22ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 29ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 91ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#index as HTML
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#show as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+  Processing by EmailManager::ManagedEmailsController#body as HTML
+  Parameters: {"method"=>:get, "id"=>1}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+Sent mail to test@email_manager.gem (63ms)
+Date: Wed, 06 Jul 2011 12:28:50 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e148d42abba0_95ab1049016620@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+  [1m[35mAREL (0.6ms)[0m  INSERT INTO "managed_emails" ("date_sent", "from", "reply_to", "to", "cc", "bcc", "headers", "message_id", "subject", "body", "caller", "created_at", "updated_at") VALUES ('2011-07-06 16:28:50.000000', 'from@example.com', '', 'test@email_manager.gem', '', '', '{}', '4e148d42abba0_95ab1049016620@ubuntu.mail', 'Dummy email notification', 'This is a dummy email notification. It should never be sent.
+', '', '2011-07-06 16:28:50.760470', '2011-07-06 16:28:50.760470')
+  [1m[36mEmailManager::ManagedEmail Load (0.3ms)[0m  [1mSELECT "managed_emails".* FROM "managed_emails" ORDER BY managed_emails.id DESC LIMIT 1[0m
+
+Sent mail to test@email_manager.gem (4ms)
+Date: Wed, 06 Jul 2011 12:28:50 -0400
+From: from@example.com
+To: test@email_manager.gem
+Message-ID: <4e148d42f20bb_95ab104901670@ubuntu.mail>
+Subject: Dummy email notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This is a dummy email notification.  It should never be sent.
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "managed_emails" ("date_sent", "from", "reply_to", "to", "cc", "bcc", "headers", "message_id", "subject", "body", "caller", "created_at", "updated_at") VALUES ('2011-07-06 16:28:50.000000', 'from@example.com', '', 'test@email_manager.gem', '', '', '{}', '4e148d42f20bb_95ab104901670@ubuntu.mail', 'Dummy email notification', 'This is a dummy email notification. It should never be sent.
+', '', '2011-07-06 16:28:50.999560', '2011-07-06 16:28:50.999560')
+  [1m[36mEmailManager::ManagedEmail Load (0.4ms)[0m  [1mSELECT "managed_emails".* FROM "managed_emails" ORDER BY managed_emails.id DESC LIMIT 1[0m
