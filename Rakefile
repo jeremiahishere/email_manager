@@ -22,6 +22,8 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{System for storing and managing emails sent by ActionMailer}
   gem.email = "jeremiah@cloudspace.com"
   gem.authors = ["Jeremiah Hemphill"]
+  gem.homepage = 'https://github.com/jeremiahishere/email_manager'
+  gem.source = 'https://github.com/jeremiahishere/email_manager'
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
