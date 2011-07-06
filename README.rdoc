@@ -1,6 +1,13 @@
 = email_manager
 
-Description goes here.
+Stores all emails sent through ActionMailer to a ManagedEmail model.  Provides controller and views with optional support for meta_search and kaminari to view the emails.
+
+== Todos
+
+* Improve test coverage
+* Improve comment coverage
+* Add a generator to generate the controller and views
+* Figure out a way to run a rails generate email_manager:install at the start of each rspec run and delete afterwards
 
 == Contributing to email_manager
  

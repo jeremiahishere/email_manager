@@ -21,10 +21,12 @@ DESC
         end 
       end 
 
+      # Adds the install migration to the parent project
       def copy_migration
         migration_template 'migrations/install.rb', 'db/migrate/install_email_manager.rb'
       end 
 
+      # Adds the initializer to the parent project
       def copy_config_file
         template "email_manager_config.rb", "config/initializers/email_manager_config.rb"
       end

@@ -3,6 +3,7 @@ require 'rails/generators/migration'
 require 'active_record'
 require 'rails/generators/active_record'
 
+# Upgrade the migrations and other generated files for future use
 module EmailManager
   module Generators
     class UpgradeGenerator < Rails::Generators::Base
@@ -20,6 +21,7 @@ module EmailManager
         end
       end
 
+      # copy additional templates/migrations to the parent project
       def copy_templates
         migrations_to_be_applied do |m|
           migration_template "#{m}.rb", "db/migrate/#{m}.rb"

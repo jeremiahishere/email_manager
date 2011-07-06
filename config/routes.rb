@@ -1,3 +1,4 @@
+# Adds routes for the three controller methods to the parent project
 Rails.application.routes.draw do
   namespace :email_manager do
     match "managed_emails", :to => "managed_emails#index", :as => "managed_emails"

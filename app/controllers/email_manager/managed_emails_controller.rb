@@ -7,6 +7,7 @@ module EmailManager
     unloadable
 
     # shows all managed emails with pagination and sorting
+    # @param [Hash] params May include information for meta_search and kaminari if the gems are installed
     def index
       # Search with meta_search
       if EmailManager::ManagedEmail.respond_to?(:search)
@@ -31,7 +32,7 @@ module EmailManager
       end 
     end 
 
-    # shows a single managed email
+    # shows a single managed email's body text
     # @param [String] id The id of the selected managed email
     def show
       @managed_email = ManagedEmail.find_by_id(params[:id])
