@@ -1,0 +1,25 @@
+%div.topnav
+  %h1.pagetitle Listing Managed Emails
+
+= render "search_form", :locals => { :search => @search, :search_enabled => @search_enabled }
+%div.content
+  = render "pagination", :locals => { :records => @records, :pagniation_enabled => @pagination_enabled }
+  %table.tableview
+    %tr
+      %th To
+      %th Subject
+      %th Date Sent
+      %th Sent From
+      %th Show
+    - if @managed_emails.length > 0
+      - @managed_emails.each do |managed_email|
+        %tr
+          %td= managed_email.to
+          %td= managed_email.subject
+          %td= managed_email.date_sent
+          %td= managed_email.caller
+          %td= link_to "Show", email_manager_managed_email_path(managed_email)
+    - else
+      %tr
+        %td{:colspan => '5'}
+          There are no Managed Emails that match your query

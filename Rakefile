@@ -12,31 +12,37 @@ end
 require 'rake'
 
 require 'jeweler'
+
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "email_manager"
-  gem.homepage = "http://github.com/jeremiahishere/email_manager"
+  #gem.homepage = "http://github.com/jeremiahishere/email_manager"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{An email manager}
+  gem.description = %Q{System for storing and managing emails sent by ActionMailer}
   gem.email = "jeremiah@cloudspace.com"
   gem.authors = ["Jeremiah Hemphill"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
 
+# rspec tests
+require 'rake/rdoctask'
 require 'rspec/core'
 require 'rspec/core/rake_task'
-RSpec::Core::RakeTask.new(:spec) do |spec|
-  spec.pattern = FileList['spec/**/*_spec.rb']
-end
 
-RSpec::Core::RakeTask.new(:rcov) do |spec|
-  spec.pattern = 'spec/**/*_spec.rb'
-  spec.rcov = true
-end
+RSpec::Core::RakeTask.new(:spec)
 
 task :default => :spec
+
+Rake::RDocTask.new(:rdoc) do |rdoc|
+  rdoc.rdoc_dir = 'rdoc'
+  rdoc.title    = 'EmailManager'
+  rdoc.options << '--line-numbers' << '--inline-source'
+  rdoc.rdoc_files.include('README.rdoc')
+  rdoc.rdoc_files.include('lib/**/*.rb')
+end
+# end rspec tests
 
 require 'yard'
 YARD::Rake::YardocTask.new
