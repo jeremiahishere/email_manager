@@ -5,7 +5,6 @@ describe EmailManager::ManagedEmailsController do
     before(:each) do
       @managed_email = mock_model(EmailManager::ManagedEmail)
       EmailManager::ManagedEmail.stub!(:search).and_return([@managed_email])
-
     end
 
     it "should be successful" do
@@ -24,12 +23,19 @@ describe EmailManager::ManagedEmailsController do
     end
 
     it "should attempt to use meta_search" do
-      pending
+      EmailManager::ManagedEmail.should_receive(:search).and_return([@managed_email])
+      EmailManager::ManagedEmail.should_receive(:respond_to?).with(:search).and_return(true)
+      get :index
+      assigns[:search_enabled].should be_true
     end
 
     it "if meta_search isn't installed, it should return all results" do
-      pending
+      EmailManager::ManagedEmail.should_receive(:all).and_return([@managed_email])
+      EmailManager::ManagedEmail.should_receive(:respond_to?).with(:search).and_return(false)
+      get :index
+      assigns[:search_enabled].should_not be_true
     end
+
 
     it "should attempt to use kaminari" do
       pending
@@ -42,19 +48,27 @@ describe EmailManager::ManagedEmailsController do
 
   describe "show" do
     before(:each) do
-
+      @managed_email = mock_model(EmailManager::ManagedEmail)
+      EmailManager::ManagedEmail.stub!(:find_by_id).with(1).and_return(@managed_email)
+    end
+    
+    def do_show
+      get :show, :method => :get, :id => 1
     end
 
     it "should be successful" do
-      pending
+      do_show
+      response.should be_success
     end
 
     it "should render the show template" do
-      pending
+      do_show
+      response.should render_template('show')
     end
 
     it "should assign the managed email to the view" do
-      pending
+      do_show
+      assigns[:managed_email].should == @managed_email
     end
   end
 

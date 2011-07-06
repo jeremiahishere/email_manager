@@ -13,7 +13,7 @@ module EmailManager
         @search = EmailManager::ManagedEmail.search(params[:search])
         @search_enabled = true
       else
-        @search = EmailManaged::ManagedEmail.all
+        @search = EmailManager::ManagedEmail.all
       end 
 
       # check if kaminari exists
