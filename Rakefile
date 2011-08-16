@@ -28,12 +28,12 @@ Jeweler::RubygemsDotOrgTasks.new
 
 # rspec tests
 require 'rake/rdoctask'
-require 'rspec/core'
+#require 'rspec/core'
 require 'rspec/core/rake_task'
 
 RSpec::Core::RakeTask.new(:spec)
 
-task :default => :spec
+#task :default => :spec
 
 Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
