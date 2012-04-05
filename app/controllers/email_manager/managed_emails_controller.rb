@@ -36,7 +36,7 @@ module EmailManager
     # shows a single managed email's body text
     # @param [String] id The id of the selected managed email
     def show
-      @managed_email = EmailManager::ManagedEmail.find_by_id(params[:id])
+      @managed_email = EmailManager::ManagedEmail.find(params[:id])
 
       respond_to do |format|
         format.html
@@ -44,7 +44,7 @@ module EmailManager
     end 
 
     def body
-      @managed_email = EmailManager::ManagedEmail.find_by_id(params[:id])
+      @managed_email = EmailManager::ManagedEmail.find(params[:id])
 
       respond_to do |format|
         format.html { render :text => @managed_email.body }
