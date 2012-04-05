@@ -60,7 +60,7 @@ describe EmailManager::ManagedEmailsController do
   describe "show" do
     before(:each) do
       @managed_email = mock_model(EmailManager::ManagedEmail)
-      EmailManager::ManagedEmail.stub!(:find_by_id).with(1).and_return(@managed_email)
+      EmailManager::ManagedEmail.stub!(:find).with(1).and_return(@managed_email)
     end
     
     def do_show
@@ -88,7 +88,7 @@ describe EmailManager::ManagedEmailsController do
       @managed_email = mock_model(EmailManager::ManagedEmail)
       @managed_email_body = "The body of the mocked email"
       @managed_email.stub!(:body).and_return(@managed_email_body)
-      EmailManager::ManagedEmail.stub!(:find_by_id).with(1).and_return(@managed_email)
+      EmailManager::ManagedEmail.stub!(:find).with(1).and_return(@managed_email)
     end
     
     def do_body
