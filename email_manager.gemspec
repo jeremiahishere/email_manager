@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{email_manager}
-  s.version = "0.0.4"
+  s.name = "email_manager"
+  s.version = "0.0.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = [%q{Jeremiah Hemphill}]
-  s.date = %q{2011-07-06}
-  s.description = %q{System for storing and managing emails sent by ActionMailer}
-  s.email = %q{jeremiah@cloudspace.com}
+  s.authors = ["Jeremiah Hemphill"]
+  s.date = "2012-04-06"
+  s.description = "System for storing and managing emails sent by ActionMailer"
+  s.email = "jeremiah@cloudspace.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -92,11 +92,11 @@ Gem::Specification.new do |s|
     "spec/routing/managed_emails_spec.rb",
     "spec/spec_helper.rb"
   ]
-  s.homepage = %q{https://github.com/jeremiahishere/email_manager}
-  s.licenses = [%q{MIT}]
-  s.require_paths = [%q{lib}]
-  s.rubygems_version = %q{1.8.5}
-  s.summary = %q{An email manager}
+  s.homepage = "https://github.com/jeremiahishere/email_manager"
+  s.licenses = ["MIT"]
+  s.require_paths = ["lib"]
+  s.rubygems_version = "1.8.15"
+  s.summary = "An email manager"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
