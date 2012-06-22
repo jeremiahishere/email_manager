@@ -32,7 +32,7 @@
     %p
       %b Body:
       %br
-      %iframe{ :width => "600", :height => "512", :src => "#{email_manager_managed_email_body_path(@managed_email)}" }
+      %iframe{ :width => "600", :height => "512", :src => "#{body_email_manager_managed_email_path(@managed_email)}" }
         %p
           Your browser does not support iframes.
           = @managed_email.body

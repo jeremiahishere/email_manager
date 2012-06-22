@@ -3,7 +3,7 @@
 
 = render "search_form", :locals => { :search => @search, :search_enabled => @search_enabled }
 %div.content
-  = render "pagination", :locals => { :records => @records, :pagniation_enabled => @pagination_enabled }
+  = render "pagination", :locals => { :records => @managed_emails, :pagination_enabled => @pagination_enabled }
   %table.tableview
     %tr
       %th To

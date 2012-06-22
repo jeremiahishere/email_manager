@@ -3,7 +3,7 @@
 # Includes optional support for meta_search and kaminari gems
 # @author Jeremiah Hemphill
 module EmailManager
-  class ManagedEmailsController < ApplicationController
+  class ManagedEmailsController < ::ApplicationController
     unloadable
 
     # shows all managed emails with pagination and sorting
@@ -20,10 +20,9 @@ module EmailManager
 
       # Paginate with kaminari
       begin
-        @managed_emails = Kaminari.paginate_array(@search.each).page(params[:page])
+        @managed_emails = Kaminari.paginate_array(@search.all).page(params[:page])
         @pagination_enabled = true
       rescue NameError => e
-        puts e
         @managed_emails = @search
         @pagination_enabled = false
       end

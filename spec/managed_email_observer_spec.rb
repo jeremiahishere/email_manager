@@ -3,7 +3,7 @@ require 'spec_helper'
 describe EmailManager::ManagedEmailObserver do
   describe "deliver_email" do
     before(:each) do
-      DummyMailer.deliver_dummy_email_notification
+      DummyMailer.dummy_email_notification.deliver
     end
 
     it "should only store the calling file of the email if it is in /app" do

@@ -46,6 +46,10 @@ describe EmailManager::ManagedEmailsController do
           [@managed_email]
         end
       end
+      @search = []
+      @search.stub(:all).and_return(@search)
+      EmailManager::ManagedEmail.stub(:search).and_return(@search)
+
       Kaminari.should_receive(:paginate_array).and_return(Kaminari.new)
       get :index
       assigns[:pagination_enabled].should be_true
@@ -60,7 +64,7 @@ describe EmailManager::ManagedEmailsController do
   describe "show" do
     before(:each) do
       @managed_email = mock_model(EmailManager::ManagedEmail)
-      EmailManager::ManagedEmail.stub!(:find).with(1).and_return(@managed_email)
+      EmailManager::ManagedEmail.stub!(:find).with("1").and_return(@managed_email)
     end
     
     def do_show
@@ -88,7 +92,7 @@ describe EmailManager::ManagedEmailsController do
       @managed_email = mock_model(EmailManager::ManagedEmail)
       @managed_email_body = "The body of the mocked email"
       @managed_email.stub!(:body).and_return(@managed_email_body)
-      EmailManager::ManagedEmail.stub!(:find).with(1).and_return(@managed_email)
+      EmailManager::ManagedEmail.stub!(:find).with("1").and_return(@managed_email)
     end
     
     def do_body

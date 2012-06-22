@@ -1,9 +1,10 @@
 source "http://rubygems.org"
 
+gem "rails", ">= 3.0.0"
+
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
 group :development, :test do
-  gem "rails", ">= 3.0.0"
   gem "sqlite3"
   gem "rspec", "~> 2.6.0"
   gem "rspec-rails"
@@ -13,8 +14,6 @@ group :development, :test do
 
   gem "bundler", "~> 1.0.0"
   gem "jeweler", "~> 1.6.3"
-  # not sure if rcov works for ruby 1.9
-  gem "rcov", ">= 0"
   # trying cover me instead
   gem "cover_me", ">= 1.0.0.rc6"
   # hudson ci
