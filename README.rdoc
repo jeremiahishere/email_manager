@@ -18,13 +18,6 @@ To override the views and controller, run the views generator.  The -e argument 
 
   rails generate email_manager:views -e haml
 
-== Todos
-
-* Improve test coverage
-* Improve comment coverage
-* Add a generator to generate the controller and views
-* Figure out a way to run a rails generate email_manager:install at the start of each rspec run and delete afterwards
-
 == Contributing to email_manager
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
